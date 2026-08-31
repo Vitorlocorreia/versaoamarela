@@ -167,37 +167,37 @@ export default function Hero({ onOpenModal }) {
         <div className="hidden lg:flex flex-col max-w-[580px] text-left pt-6">
 
           <div className="hero-animate-text mb-4">
-            <span className="text-[11px] font-bold tracking-[0.15em] text-[#2563EB] uppercase">
+            <span className="text-[11px] font-bold tracking-[0.15em] text-[#D97706] uppercase">
               Especialista em Envelhecimento & Longevidade
             </span>
-            <div className="h-[2px] w-12 bg-[#2563EB] mt-2" />
+            <div className="h-[2px] w-12 bg-[#D97706] mt-2" />
           </div>
 
           {/* H1 com Typing Effect */}
           <h1 className="hero-animate-text font-serif text-[44px] xl:text-[48px] leading-[1.14] font-normal tracking-tight mb-5 min-h-[115px]">
-            <span className="text-[#1B2B5E] block mb-2">
+            <span className="text-[#1C1400] block mb-2">
               {displayedLines[0]}
               {displayedLines[0].length < 'Movimento para viver bem'.length && (
-                <span className="inline-block w-0.5 h-[1em] bg-[#2563EB] ml-0.5 animate-pulse align-middle" />
+                <span className="inline-block w-0.5 h-[1em] bg-[#D97706] ml-0.5 animate-pulse align-middle" />
               )}
             </span>
-            <span className="text-[#2563EB] font-semibold block">
+            <span className="text-[#D97706] font-semibold block">
               {displayedLines[1]}
               {displayedLines[0] === 'Movimento para viver bem' &&
                 displayedLines[1].length < 'em todas as fases da vida.'.length && (
-                <span className="inline-block w-0.5 h-[0.85em] bg-[#2563EB] ml-0.5 animate-pulse align-middle" />
+                <span className="inline-block w-0.5 h-[0.85em] bg-[#D97706] ml-0.5 animate-pulse align-middle" />
               )}
             </span>
           </h1>
 
-          <p className="hero-animate-text text-base text-[#1B2B5E]/90 leading-relaxed max-w-lg mb-8">
+          <p className="hero-animate-text text-base text-[#1C1400]/90 leading-relaxed max-w-lg mb-8">
             Treinamento especializado para adultos e idosos, desenvolvido para preservar força, funcionalidade e qualidade de vida ao longo dos anos.
           </p>
 
           <div className="flex items-center gap-4 mb-6">
             <button
               onClick={onOpenModal}
-              className="hero-animate-cta flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold px-7 py-3.5 rounded-xl text-sm shadow-md shadow-blue-500/20 transition-all active:scale-95 cursor-pointer"
+              className="hero-animate-cta flex items-center justify-center gap-2 bg-[#D97706] hover:bg-[#B45309] text-white font-bold px-7 py-3.5 rounded-xl text-sm shadow-md shadow-amber-500/20 transition-all active:scale-95 cursor-pointer"
             >
               <Calendar size={18} />
               <span>Agendar consulta inicial</span>
@@ -205,10 +205,10 @@ export default function Hero({ onOpenModal }) {
 
             <a
               href="#sobre"
-              className="hero-animate-cta flex items-center justify-center gap-2 border border-[#2563EB] text-[#1B2B5E] hover:bg-[#F0F4FF] px-7 py-3.5 rounded-xl text-sm font-semibold transition-all bg-white active:scale-95 cursor-pointer"
+              className="hero-animate-cta flex items-center justify-center gap-2 border border-[#D97706] text-[#1C1400] hover:bg-[#FEF9C3] px-7 py-3.5 rounded-xl text-sm font-semibold transition-all bg-white active:scale-95 cursor-pointer"
             >
               <span>Conhecer o método</span>
-              <ArrowRight size={16} className="text-[#2563EB]" />
+              <ArrowRight size={16} className="text-[#D97706]" />
             </a>
           </div>
         </div>
@@ -216,25 +216,25 @@ export default function Hero({ onOpenModal }) {
         {/* ── MOBILE CONTENT ── */}
         <div className="lg:hidden w-full flex flex-col pt-2 pb-8 px-2 z-10 relative">
           <div className="hero-animate-text mb-3 text-left">
-            <span className="text-[11px] font-bold tracking-[0.14em] text-[#2563EB] uppercase">
+            <span className="text-[11px] font-bold tracking-[0.14em] text-[#D97706] uppercase">
               Especialista em Envelhecimento & Longevidade
             </span>
-            <div className="h-[2px] w-10 bg-[#2563EB] mt-1.5" />
+            <div className="h-[2px] w-10 bg-[#D97706] mt-1.5" />
           </div>
 
           <h1 className="hero-animate-text font-serif text-[28px] sm:text-[32px] leading-[1.2] font-normal tracking-tight mb-3 text-left">
-            <span className="text-[#1B2B5E] block mb-0.5">Movimento para viver bem</span>
-            <span className="text-[#2563EB] font-semibold block">em todas as fases da vida.</span>
+            <span className="text-[#1C1400] block mb-0.5">Movimento para viver bem</span>
+            <span className="text-[#D97706] font-semibold block">em todas as fases da vida.</span>
           </h1>
 
-          <p className="hero-animate-text text-[14px] text-[#2C3B5E] leading-relaxed mb-6 text-left">
+          <p className="hero-animate-text text-[14px] text-[#453314] leading-relaxed mb-6 text-left">
             Treinamento especializado para adultos e idosos, desenvolvido para preservar força, funcionalidade e qualidade de vida ao longo dos anos.
           </p>
 
           <div className="flex flex-col gap-3 mb-2 w-full">
             <button
               onClick={onOpenModal}
-              className="hero-animate-cta w-full h-[52px] flex items-center justify-center gap-2.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold px-5 rounded-xl text-[15px] shadow-md shadow-blue-500/20 transition-all active:scale-[0.98] cursor-pointer"
+              className="hero-animate-cta w-full h-[52px] flex items-center justify-center gap-2.5 bg-[#D97706] hover:bg-[#B45309] text-white font-bold px-5 rounded-xl text-[15px] shadow-md shadow-amber-500/20 transition-all active:scale-[0.98] cursor-pointer"
             >
               <Calendar size={19} />
               <span>Agendar consulta inicial</span>
@@ -242,10 +242,10 @@ export default function Hero({ onOpenModal }) {
 
             <a
               href="#sobre"
-              className="hero-animate-cta w-full h-[52px] flex items-center justify-center gap-2.5 border border-[#2563EB]/40 text-[#1B2B5E] hover:bg-[#F0F4FF] px-5 rounded-xl font-semibold text-[15px] transition-all bg-white active:scale-[0.98] cursor-pointer"
+              className="hero-animate-cta w-full h-[52px] flex items-center justify-center gap-2.5 border border-[#D97706]/40 text-[#1C1400] hover:bg-[#FEF9C3] px-5 rounded-xl font-semibold text-[15px] transition-all bg-white active:scale-[0.98] cursor-pointer"
             >
               <span>Conhecer o método</span>
-              <ArrowRight size={18} className="text-[#2563EB]" />
+              <ArrowRight size={18} className="text-[#D97706]" />
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@
  * Dispara partículas coloridas do ponto de origem (botão Agendar).
  */
 
-const COLORS = ['#2563EB', '#60A5FA', '#1B2B5E', '#93C5FD', '#BFDBFE', '#FCD34D', '#6EE7B7'];
+const COLORS = ['#D97706', '#F59E0B', '#1C1400', '#93C5FD', '#BFDBFE', '#FCD34D', '#6EE7B7'];
 
 function random(min, max) {
   return Math.random() * (max - min) + min;

@@ -50,7 +50,7 @@ export default function Navbar({ onOpenMobileMenu, whatsappUrl }) {
 
       {/* ── Scroll Progress Bar ── */}
       <div
-        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#1D4ED8] via-[#60A5FA] to-[#2563EB] z-50 pointer-events-none rounded-r-full transition-all duration-75"
+        className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-[#B45309] via-[#F59E0B] to-[#D97706] z-50 pointer-events-none rounded-r-full transition-all duration-75"
         style={{
           width: `${progress}%`,
           opacity: progress > 1 ? 1 : 0,
@@ -60,22 +60,22 @@ export default function Navbar({ onOpenMobileMenu, whatsappUrl }) {
       <header
         className={`pointer-events-auto transition-all duration-500 ease-in-out ${
           scrolled
-            ? 'w-full top-0 py-3.5 px-6 sm:px-10 lg:px-12 bg-white/95 backdrop-blur-md border-b border-blue-100 shadow-md rounded-none'
-            : 'w-[94%] max-w-7xl mt-3 sm:mt-4 py-3 px-5 sm:px-6 bg-white/80 backdrop-blur-md border border-blue-100/80 shadow-sm rounded-full'
+            ? 'w-full top-0 py-3.5 px-6 sm:px-10 lg:px-12 bg-white/95 backdrop-blur-md border-b border-amber-200 shadow-md rounded-none'
+            : 'w-[94%] max-w-7xl mt-3 sm:mt-4 py-3 px-5 sm:px-6 bg-white/80 backdrop-blur-md border border-amber-200/80 shadow-sm rounded-full'
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Logo />
 
-          <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold text-[#1B2B5E]/70">
+          <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold text-[#1C1400]/70">
             {navLinks.map((link, idx) => (
               <a
                 key={idx}
                 href={link.href}
-                className={`hover:text-[#2563EB] transition-colors py-1 relative group ${activeSection === link.section ? 'text-[#2563EB]' : ''}`}
+                className={`hover:text-[#D97706] transition-colors py-1 relative group ${activeSection === link.section ? 'text-[#D97706]' : ''}`}
               >
                 {link.name}
-                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#2563EB] rounded-full transition-all duration-300 ${activeSection === link.section ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#D97706] rounded-full transition-all duration-300 ${activeSection === link.section ? 'w-full' : 'w-0 group-hover:w-full'}`} />
               </a>
             ))}
           </nav>
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenMobileMenu, whatsappUrl }) {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#2563EB] text-white text-xs font-semibold hover:bg-[#1D4ED8] transition-all shadow-md shadow-blue-500/20"
+              className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#D97706] text-white text-xs font-semibold hover:bg-[#B45309] transition-all shadow-md shadow-amber-500/20"
             >
               <MessageCircle size={15} />
               <span>Falar pelo WhatsApp</span>
@@ -94,7 +94,7 @@ export default function Navbar({ onOpenMobileMenu, whatsappUrl }) {
 
           <button
             onClick={onOpenMobileMenu}
-            className="lg:hidden p-2 text-[#1B2B5E] hover:text-[#2563EB] focus:outline-none transition-colors"
+            className="lg:hidden p-2 text-[#1C1400] hover:text-[#D97706] focus:outline-none transition-colors"
             aria-label="Abrir menu"
           >
             <Menu size={26} />

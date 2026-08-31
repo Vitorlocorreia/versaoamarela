@@ -57,7 +57,7 @@ function VideoTestimonialCard({ src, title, subtitle, badge }) {
   };
 
   return (
-    <div className="relative group bg-white rounded-3xl overflow-hidden border border-blue-100/90 shadow-md flex flex-col justify-between hover:shadow-xl hover:border-blue-300 transition-all duration-300 h-full">
+    <div className="relative group bg-white rounded-3xl overflow-hidden border border-amber-200/90 shadow-md flex flex-col justify-between hover:shadow-xl hover:border-amber-400 transition-all duration-300 h-full">
       <div className="relative aspect-[9/13] max-h-[460px] w-full bg-slate-900 overflow-hidden">
         <video
           ref={videoRef}
@@ -78,7 +78,7 @@ function VideoTestimonialCard({ src, title, subtitle, badge }) {
           >
             <button
               type="button"
-              className="w-16 h-16 rounded-full bg-[#2563EB] text-white flex items-center justify-center shadow-xl shadow-blue-500/40 group-hover:scale-110 active:scale-95 transition-all cursor-pointer"
+              className="w-16 h-16 rounded-full bg-[#D97706] text-white flex items-center justify-center shadow-xl shadow-amber-500/40 group-hover:scale-110 active:scale-95 transition-all cursor-pointer"
               aria-label="Assistir relato"
             >
               <Play size={28} className="translate-x-0.5 fill-white" />
@@ -92,14 +92,14 @@ function VideoTestimonialCard({ src, title, subtitle, badge }) {
 
       <div className="p-6 bg-white flex flex-col justify-between flex-grow">
         <div>
-          <span className="text-[11px] font-mono font-bold tracking-wider text-[#2563EB] uppercase bg-blue-50 px-2.5 py-1 rounded-md mb-2 inline-block">
+          <span className="text-[11px] font-mono font-bold tracking-wider text-[#D97706] uppercase bg-amber-50 px-2.5 py-1 rounded-md mb-2 inline-block">
             {badge}
           </span>
-          <h4 className="font-serif text-xl font-semibold text-[#1B2B5E] leading-snug">
+          <h4 className="font-serif text-xl font-semibold text-[#1C1400] leading-snug">
             {title}
           </h4>
         </div>
-        <p className="text-xs sm:text-sm text-[#4B5E8A] mt-2 leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#5C4A28] mt-2 leading-relaxed">
           {subtitle}
         </p>
       </div>
@@ -144,10 +144,10 @@ function VideoCarousel() {
       {/* Header com botões de navegação */}
       <div className="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4 text-center sm:text-left">
         <div>
-          <span className="text-[11px] font-bold text-[#2563EB] uppercase tracking-[0.2em] block mb-1">
+          <span className="text-[11px] font-bold text-[#D97706] uppercase tracking-[0.2em] block mb-1">
             Depoimentos em Vídeo
           </span>
-          <h3 className="font-serif text-2xl sm:text-3xl text-[#1B2B5E] font-medium">
+          <h3 className="font-serif text-2xl sm:text-3xl text-[#1C1400] font-medium">
             Histórias reais de transformação
           </h3>
         </div>
@@ -156,14 +156,14 @@ function VideoCarousel() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full bg-white border border-blue-100 text-[#1B2B5E] hover:bg-blue-50 flex items-center justify-center shadow-xs active:scale-95 transition-all cursor-pointer"
+            className="w-10 h-10 rounded-full bg-white border border-amber-200 text-[#1C1400] hover:bg-amber-50 flex items-center justify-center shadow-xs active:scale-95 transition-all cursor-pointer"
             aria-label="Vídeo anterior"
           >
             <ChevronLeft size={20} />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full bg-[#2563EB] text-white flex items-center justify-center shadow-md shadow-blue-500/20 active:scale-95 transition-all cursor-pointer hover:bg-[#1D4ED8]"
+            className="w-10 h-10 rounded-full bg-[#D97706] text-white flex items-center justify-center shadow-md shadow-amber-500/20 active:scale-95 transition-all cursor-pointer hover:bg-[#B45309]"
             aria-label="Próximo vídeo"
           >
             <ChevronRight size={20} />
@@ -272,7 +272,7 @@ const photos = [
 function BentoCard({ item, onOpen }) {
   return (
     <div
-      className={`group relative overflow-hidden rounded-2xl cursor-pointer border border-blue-100/60 shadow-sm hover:shadow-xl transition-shadow duration-300 min-w-[220px] ${item.span}`}
+      className={`group relative overflow-hidden rounded-2xl cursor-pointer border border-amber-200/60 shadow-sm hover:shadow-xl transition-shadow duration-300 min-w-[220px] ${item.span}`}
       onClick={() => onOpen(item)}
       tabIndex={0}
       onKeyDown={(e) => e.key === "Enter" && onOpen(item)}
@@ -283,12 +283,12 @@ function BentoCard({ item, onOpen }) {
         alt={item.title}
         className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1B2B5E]/85 via-[#1B2B5E]/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1C1400]/85 via-[#1C1400]/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 z-10">
         <h3 className="text-base font-bold text-white leading-tight">{item.title}</h3>
         <p className="mt-1 text-sm text-white/80">{item.desc}</p>
       </div>
-      <div className="absolute top-3 right-3 w-2.5 h-2.5 rounded-full bg-[#2563EB] shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute top-3 right-3 w-2.5 h-2.5 rounded-full bg-[#D97706] shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </div>
   );
 }
@@ -302,7 +302,7 @@ export default function ProofGallery() {
   return (
     <section
       id="depoimentos"
-      className="relative bg-[#F4F7FC] py-20 lg:py-28 overflow-hidden"
+      className="relative bg-[#FAF6E4] py-20 lg:py-28 overflow-hidden"
     >
       <style>{`
         @keyframes bento-scroll {
@@ -326,20 +326,20 @@ export default function ProofGallery() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-14"
       >
-        <span className="text-[11px] font-bold tracking-[0.2em] text-[#2563EB] uppercase block mb-4">
+        <span className="text-[11px] font-bold tracking-[0.2em] text-[#D97706] uppercase block mb-4">
           Resultados na Vida Real
         </span>
 
         {/* Big Highlighted Headline */}
-        <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1B2B5E] font-medium leading-tight mb-6">
+        <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1C1400] font-medium leading-tight mb-6">
           O resultado mais importante{" "}
-          <span className="relative inline-block text-[#2563EB]">
+          <span className="relative inline-block text-[#D97706]">
             acontece fora do treino.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-[#2563EB] rounded-full" />
+            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-[#D97706] rounded-full" />
           </span>
         </h2>
 
-        <p className="text-[#4B5E8A] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-[#5C4A28] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           O exercício ganha significado quando aquilo que é desenvolvido no treino melhora a maneira como você vive.
         </p>
 
@@ -353,10 +353,10 @@ export default function ProofGallery() {
           ].map((title, i) => (
             <div
               key={i}
-              className="bg-white p-5 rounded-2xl border border-blue-100/90 shadow-xs hover:border-blue-300 transition-all duration-300 relative"
+              className="bg-white p-5 rounded-2xl border border-amber-200/90 shadow-xs hover:border-amber-400 transition-all duration-300 relative"
             >
-              <div className="w-5 h-1 bg-[#2563EB] mb-3 rounded-full" />
-              <span className="text-sm font-semibold text-[#1B2B5E] leading-snug block">
+              <div className="w-5 h-1 bg-[#D97706] mb-3 rounded-full" />
+              <span className="text-sm font-semibold text-[#1C1400] leading-snug block">
                 {title}
               </span>
             </div>
@@ -369,8 +369,8 @@ export default function ProofGallery() {
 
       {/* ── Bento Carrossel Infinito com Fotos ── */}
       <div className="relative">
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-28 z-10 bg-gradient-to-r from-[#F4F7FC] to-transparent" />
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-28 z-10 bg-gradient-to-l from-[#F4F7FC] to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-28 z-10 bg-gradient-to-r from-[#FAF6E4] to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-28 z-10 bg-gradient-to-l from-[#FAF6E4] to-transparent" />
 
         <div className="overflow-hidden">
           <div
@@ -405,10 +405,10 @@ export default function ProofGallery() {
         transition={{ delay: 0.3 }}
         className="text-center mt-12 px-4"
       >
-        <p className="text-[#4B5E8A] text-sm sm:text-base max-w-xl mx-auto">
+        <p className="text-[#5C4A28] text-sm sm:text-base max-w-xl mx-auto">
           Essa é a minha aluna. Ela realiza isso toda semana — com força,
           equilíbrio e segurança.{" "}
-          <strong className="text-[#1B2B5E]">Você também pode conquistar essa independência e autonomia comigo.</strong>
+          <strong className="text-[#1C1400]">Você também pode conquistar essa independência e autonomia comigo.</strong>
         </p>
       </motion.div>
 

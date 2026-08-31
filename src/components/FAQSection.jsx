@@ -52,23 +52,23 @@ export default function FAQSection({ onOpenModal, whatsappUrl }) {
   const toggleFaq = (idx) => setOpenIdx(openIdx === idx ? -1 : idx);
 
   return (
-    <section ref={sectionRef} id="faq" className="py-20 lg:py-28 bg-[#F4F7FC] relative overflow-hidden">
-      <BackgroundCircle size={380} color="#E0E7FF" opacity={0.35} className="top-1/4 -right-20 z-0" />
+    <section ref={sectionRef} id="faq" className="py-20 lg:py-28 bg-[#FAF6E4] relative overflow-hidden">
+      <BackgroundCircle size={380} color="#FEF3C7" opacity={0.35} className="top-1/4 -right-20 z-0" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* ── Header ── */}
         <div className="text-center mb-14">
-          <span className="text-[11px] font-bold tracking-[0.2em] text-[#2563EB] uppercase block mb-3">
+          <span className="text-[11px] font-bold tracking-[0.2em] text-[#D97706] uppercase block mb-3">
             Dúvidas Frequentes
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1B2B5E] font-medium leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1C1400] font-medium leading-tight">
             Perguntas Frequentes
           </h2>
-          <p className="text-xs sm:text-sm text-[#4B5E8A] mt-3 max-w-lg mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#5C4A28] mt-3 max-w-lg mx-auto leading-relaxed">
             Tire suas principais dúvidas sobre como funciona o meu acompanhamento especializado para adultos e idosos.
           </p>
-          <div className="h-0.5 w-10 bg-[#2563EB] mx-auto mt-4 rounded-full" />
+          <div className="h-0.5 w-10 bg-[#D97706] mx-auto mt-4 rounded-full" />
         </div>
 
         {/* ── Accordion ── */}
@@ -76,19 +76,19 @@ export default function FAQSection({ onOpenModal, whatsappUrl }) {
           {faqs.map((faq, idx) => {
             const isOpen = openIdx === idx;
             return (
-              <div key={idx} className="faq-item-anim bg-white rounded-2xl border border-blue-100/90 shadow-xs overflow-hidden transition-all duration-200 hover:border-blue-200">
+              <div key={idx} className="faq-item-anim bg-white rounded-2xl border border-amber-200/90 shadow-xs overflow-hidden transition-all duration-200 hover:border-amber-300">
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-serif font-semibold text-[#1B2B5E] text-base sm:text-lg hover:text-[#2563EB] transition-colors cursor-pointer"
+                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-serif font-semibold text-[#1C1400] text-base sm:text-lg hover:text-[#D97706] transition-colors cursor-pointer"
                   aria-expanded={isOpen}
                 >
                   <span className="leading-snug">{faq.q}</span>
-                  <div className={`w-8 h-8 rounded-full bg-blue-50 text-[#2563EB] flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#2563EB] text-white' : ''}`}>
+                  <div className={`w-8 h-8 rounded-full bg-amber-50 text-[#D97706] flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#D97706] text-white' : ''}`}>
                     <ChevronDown size={18} />
                   </div>
                 </button>
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#4B5E8A] leading-relaxed border-t border-slate-100">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#5C4A28] leading-relaxed border-t border-slate-100">
                     <p>{faq.a}</p>
                   </div>
                 )}
@@ -101,22 +101,22 @@ export default function FAQSection({ onOpenModal, whatsappUrl }) {
             CLEAN WHATSAPP CHAT SHOWCASE CARD
             Mockup 3D Fotorrealista do iPhone Titanium
             ───────────────────────────────────────────── */}
-        <div className="relative max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-blue-100/90 shadow-xl shadow-blue-500/5">
+        <div className="relative max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-amber-200/90 shadow-xl shadow-amber-500/5">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
             
             {/* Coluna Esquerda: Texto & CTA */}
             <div className="lg:col-span-7 text-center lg:text-left space-y-5">
               
-              <div className="inline-flex items-center gap-2 bg-blue-50 text-[#2563EB] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 bg-amber-50 text-[#D97706] px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
                 <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
                 Atendimento Direto
               </div>
 
-              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#1B2B5E] font-medium leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-[#1C1400] font-medium leading-tight">
                 Ainda tem alguma dúvida? Fale comigo agora.
               </h3>
 
-              <p className="text-[#4B5E8A] text-sm sm:text-base leading-relaxed">
+              <p className="text-[#5C4A28] text-sm sm:text-base leading-relaxed">
                 Estou à disposição no WhatsApp para entender o seu caso, tirar dúvidas sobre o acompanhamento e te orientar sobre o melhor caminho para sua saúde.
               </p>
 
@@ -133,7 +133,7 @@ export default function FAQSection({ onOpenModal, whatsappUrl }) {
                 </a>
               </div>
 
-              <p className="text-[11px] text-[#4B5E8A] pt-1">
+              <p className="text-[11px] text-[#5C4A28] pt-1">
                 Resposta rápida • Atendimento humanizado e sem compromisso
               </p>
 

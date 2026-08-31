@@ -53,25 +53,25 @@ export default function HowItWorks() {
 
   return (
     <section ref={sectionRef} id="metodo" className="py-20 lg:py-28 bg-white relative overflow-hidden">
-      <BackgroundCircle size={350} color="#E0E7FF" opacity={0.4} className="-top-12 right-12 z-0" />
-      <DottedPattern rows={6} cols={6} color="#2563EB" opacity={0.12} className="absolute bottom-8 left-8 z-0 hidden sm:block" />
+      <BackgroundCircle size={350} color="#FEF3C7" opacity={0.4} className="-top-12 right-12 z-0" />
+      <DottedPattern rows={6} cols={6} color="#D97706" opacity={0.12} className="absolute bottom-8 left-8 z-0 hidden sm:block" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
 
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[11px] font-bold tracking-[0.2em] text-[#2563EB] uppercase block mb-3">
+          <span className="text-[11px] font-bold tracking-[0.2em] text-[#D97706] uppercase block mb-3">
             Meu Método
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1B2B5E] font-medium mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1C1400] font-medium mb-4">
             Exercício com estratégia e propósito.
           </h2>
-          <p className="text-base sm:text-lg font-bold text-[#2563EB] mb-4">
+          <p className="text-base sm:text-lg font-bold text-[#D97706] mb-4">
             Não acredito em treinos prontos.
           </p>
-          <p className="text-[#4B5E8A] text-sm sm:text-base leading-relaxed">
+          <p className="text-[#5C4A28] text-sm sm:text-base leading-relaxed">
             O acompanhamento é construído a partir das necessidades de cada pessoa, integrando força, equilíbrio, coordenação, mobilidade e funcionalidade para que os resultados do treino sejam percebidos também na vida cotidiana.
           </p>
-          <div className="h-0.5 w-10 bg-[#2563EB] mx-auto mt-6 rounded-full" />
+          <div className="h-0.5 w-10 bg-[#D97706] mx-auto mt-6 rounded-full" />
         </div>
 
         {/* Steps Grid */}
@@ -79,23 +79,23 @@ export default function HowItWorks() {
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="step-card bg-[#F4F7FC] rounded-3xl p-7 border border-blue-100/80 shadow-xs relative flex flex-col justify-between hover:shadow-md hover:border-blue-300 transition-all duration-300"
+              className="step-card bg-[#FAF6E4] rounded-3xl p-7 border border-amber-200/80 shadow-xs relative flex flex-col justify-between hover:shadow-md hover:border-amber-400 transition-all duration-300"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
-                  <span className="font-serif text-2xl font-bold text-[#2563EB]">
+                  <span className="font-serif text-2xl font-bold text-[#D97706]">
                     {step.num}
                   </span>
-                  <div className="w-8 h-0.5 bg-[#2563EB]/30 rounded-full" />
+                  <div className="w-8 h-0.5 bg-[#D97706]/30 rounded-full" />
                 </div>
 
-                <h3 className="font-serif text-xl font-semibold text-[#1B2B5E] mb-2.5 flex items-center gap-2">
+                <h3 className="font-serif text-xl font-semibold text-[#1C1400] mb-2.5 flex items-center gap-2">
                   {step.title}
                   {idx < steps.length - 1 && (
-                    <ArrowRight size={14} className="text-blue-300 hidden lg:inline" />
+                    <ArrowRight size={14} className="text-amber-300 hidden lg:inline" />
                   )}
                 </h3>
-                <p className="text-[#4B5E8A] text-xs sm:text-sm leading-relaxed">
+                <p className="text-[#5C4A28] text-xs sm:text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>

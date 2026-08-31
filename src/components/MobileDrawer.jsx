@@ -23,14 +23,14 @@ export default function MobileDrawer({ isOpen, onClose, onOpenModal, whatsappUrl
       />
 
       {/* Drawer Panel */}
-      <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between animate-slide-in-right border-l border-blue-100">
+      <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between animate-slide-in-right border-l border-amber-200">
         <div>
           {/* Header */}
-          <div className="flex items-center justify-between pb-4 border-b border-blue-100">
+          <div className="flex items-center justify-between pb-4 border-b border-amber-200">
             <Logo />
             <button
               onClick={onClose}
-              className="p-2 text-[#1B2B5E] hover:bg-blue-50 rounded-full transition-colors"
+              className="p-2 text-[#1C1400] hover:bg-amber-50 rounded-full transition-colors"
             >
               <X size={22} />
             </button>
@@ -43,7 +43,7 @@ export default function MobileDrawer({ isOpen, onClose, onOpenModal, whatsappUrl
                 key={idx}
                 href={link.href}
                 onClick={onClose}
-                className="text-sm font-semibold text-[#1B2B5E] hover:text-[#2563EB] hover:bg-blue-50 px-3 py-3 rounded-xl transition-all border-b border-blue-50 last:border-b-0"
+                className="text-sm font-semibold text-[#1C1400] hover:text-[#D97706] hover:bg-amber-50 px-3 py-3 rounded-xl transition-all border-b border-amber-100 last:border-b-0"
               >
                 {link.name}
               </a>
@@ -52,10 +52,10 @@ export default function MobileDrawer({ isOpen, onClose, onOpenModal, whatsappUrl
         </div>
 
         {/* Bottom CTAs */}
-        <div className="flex flex-col gap-3 pt-6 border-t border-blue-100">
+        <div className="flex flex-col gap-3 pt-6 border-t border-amber-200">
           <button
             onClick={() => { onClose(); onOpenModal(); }}
-            className="w-full flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold py-3.5 px-5 rounded-xl shadow-md shadow-blue-500/25 text-sm transition-all active:scale-95"
+            className="w-full flex items-center justify-center gap-2 bg-[#D97706] hover:bg-[#B45309] text-white font-bold py-3.5 px-5 rounded-xl shadow-md shadow-amber-500/25 text-sm transition-all active:scale-95"
           >
             <Calendar size={16} />
             <span>Agendar Avaliação</span>

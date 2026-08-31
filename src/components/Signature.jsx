@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Signature({ className = "", width = 310, height = 80, color = "#1B2B5E" }) {
+export default function Signature({ className = "", width = 310, height = 80, color = "#1C1400" }) {
   const pathRef = useRef(null);
   const containerRef = useRef(null);
 
@@ -75,7 +75,7 @@ export default function Signature({ className = "", width = 310, height = 80, co
           style={{ opacity: 0 }}
         />
       </svg>
-      <span className="block text-[10px] uppercase font-bold tracking-[0.18em] text-[#2563EB] mt-0.5">
+      <span className="block text-[10px] uppercase font-bold tracking-[0.18em] text-[#D97706] mt-0.5">
         Arielle Martins • Personal Trainer
       </span>
     </div>

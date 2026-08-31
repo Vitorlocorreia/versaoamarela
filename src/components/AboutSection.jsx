@@ -53,9 +53,9 @@ export default function AboutSection({ onOpenModal }) {
   return (
     <section ref={sectionRef} id="sobre" className="py-20 lg:py-28 bg-white relative overflow-hidden">
       {/* Background Glow & Geometric Accent Patterns */}
-      <BackgroundCircle size={450} color="#E0E7FF" opacity={0.5} className="-top-20 -left-20" />
-      <DottedPattern rows={6} cols={6} color="#2563EB" opacity={0.12} className="absolute top-10 right-8 z-0 hidden sm:block" />
-      <WaveLine variant={2} color="#2563EB" opacity={0.25} className="absolute bottom-6 right-12 z-0 hidden lg:block" />
+      <BackgroundCircle size={450} color="#FEF3C7" opacity={0.5} className="-top-20 -left-20" />
+      <DottedPattern rows={6} cols={6} color="#D97706" opacity={0.12} className="absolute top-10 right-8 z-0 hidden sm:block" />
+      <WaveLine variant={2} color="#D97706" opacity={0.25} className="absolute bottom-6 right-12 z-0 hidden lg:block" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
@@ -70,9 +70,9 @@ export default function AboutSection({ onOpenModal }) {
                 className="w-full h-[440px] sm:h-[540px] object-cover"
                 style={{ objectPosition: 'center 8%' }}
               />
-              <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-blue-100/50">
-                <span className="text-[11px] font-bold text-[#2563EB] uppercase tracking-wider block">Especialista</span>
-                <span className="text-xs font-semibold text-[#1B2B5E]">Gerontologia & Exercício para Adultos e Idosos</span>
+              <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl shadow-md border border-amber-200/50">
+                <span className="text-[11px] font-bold text-[#D97706] uppercase tracking-wider block">Especialista</span>
+                <span className="text-xs font-semibold text-[#1C1400]">Gerontologia & Exercício para Adultos e Idosos</span>
               </div>
             </div>
           </div>
@@ -80,21 +80,21 @@ export default function AboutSection({ onOpenModal }) {
           {/* Right Column: Bio + Proposta Integrada + Assinatura */}
           <div className="lg:col-span-6 space-y-5">
             <div className="relative about-animate-content">
-              <span className="text-[11px] font-bold tracking-[0.2em] text-[#2563EB] uppercase mb-2 block">
+              <span className="text-[11px] font-bold tracking-[0.2em] text-[#D97706] uppercase mb-2 block">
                 Sobre Mim & Proposta
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#1B2B5E] font-medium leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#1C1400] font-medium leading-tight">
                 Arielle Martins
               </h2>
             </div>
 
-            <p className="text-sm sm:text-base font-semibold text-[#2563EB] leading-snug about-animate-content">
+            <p className="text-sm sm:text-base font-semibold text-[#D97706] leading-snug about-animate-content">
               Profissional de Educação Física e pós-graduanda em Gerontologia, com atuação voltada ao exercício físico para adultos e idosos.
             </p>
 
-            <div className="space-y-3.5 text-[#4B5E8A] text-sm sm:text-base leading-relaxed about-animate-content">
+            <div className="space-y-3.5 text-[#5C4A28] text-sm sm:text-base leading-relaxed about-animate-content">
               <p>
-                Meu trabalho parte de uma ideia simples: <strong className="text-[#1B2B5E]">não basta acrescentar anos à vida. É preciso preservar a capacidade de vivê-los bem.</strong>
+                Meu trabalho parte de uma ideia simples: <strong className="text-[#1C1400]">não basta acrescentar anos à vida. É preciso preservar a capacidade de vivê-los bem.</strong>
               </p>
               
               <p>
@@ -102,22 +102,22 @@ export default function AboutSection({ onOpenModal }) {
               </p>
 
               {/* Destaque da Proposta */}
-              <div className="pl-4 border-l-2 border-[#2563EB] py-1 my-3 bg-blue-50/40 rounded-r-xl pr-3">
-                <p className="font-medium text-[#1B2B5E] text-sm sm:text-base italic">
-                  "Estudo o envelhecimento para transformar o exercício em uma ferramenta que prepara o corpo não apenas para o treino, <span className="text-[#2563EB] font-bold not-italic">mas para a vida real.</span>"
+              <div className="pl-4 border-l-2 border-[#D97706] py-1 my-3 bg-amber-50/40 rounded-r-xl pr-3">
+                <p className="font-medium text-[#1C1400] text-sm sm:text-base italic">
+                  "Estudo o envelhecimento para transformar o exercício em uma ferramenta que prepara o corpo não apenas para o treino, <span className="text-[#D97706] font-bold not-italic">mas para a vida real.</span>"
                 </p>
               </div>
             </div>
 
             {/* Cursive SVG Signature */}
             <div className="pt-1 about-animate-content">
-              <Signature width={220} height={70} color="#1B2B5E" />
+              <Signature width={220} height={70} color="#1C1400" />
             </div>
 
             <div className="pt-1 about-animate-content">
               <button
                 onClick={onOpenModal}
-                className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-7 py-3.5 rounded-xl text-xs font-bold transition-all shadow-md shadow-blue-500/20 active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-2 bg-[#D97706] hover:bg-[#B45309] text-white px-7 py-3.5 rounded-xl text-xs font-bold transition-all shadow-md shadow-amber-500/20 active:scale-95 cursor-pointer"
               >
                 <Calendar size={16} />
                 <span>Agendar consulta inicial</span>

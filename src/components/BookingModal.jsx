@@ -37,33 +37,33 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
       />
 
       {/* Modal Container */}
-      <div className="relative bg-[#F4F7FC] rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-blue-100 z-10 animate-fade-in max-h-[90vh] overflow-y-auto">
+      <div className="relative bg-[#FAF6E4] rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-amber-200 z-10 animate-fade-in max-h-[90vh] overflow-y-auto">
         
         {/* Close Button */}
         <button 
           onClick={onClose}
-          className="absolute top-5 right-5 p-2 text-[#1B2B5E] hover:bg-blue-100/60 rounded-full transition-colors"
+          className="absolute top-5 right-5 p-2 text-[#1C1400] hover:bg-amber-100/60 rounded-full transition-colors"
         >
           <X size={20} />
         </button>
 
         {/* Modal Header */}
         <div className="flex items-center gap-3 mb-6">
-          <div className="p-3 bg-blue-50 text-[#2563EB] rounded-2xl">
+          <div className="p-3 bg-amber-50 text-[#D97706] rounded-2xl">
             <Calendar size={24} />
           </div>
           <div>
-            <h3 className="font-serif text-2xl font-bold text-[#1B2B5E]">
+            <h3 className="font-serif text-2xl font-bold text-[#1C1400]">
               Agendar Consulta Inicial
             </h3>
-            <p className="text-xs text-[#4B5E8A]">Preencha os dados para conversarmos sobre você e seus objetivos</p>
+            <p className="text-xs text-[#5C4A28]">Preencha os dados para conversarmos sobre você e seus objetivos</p>
           </div>
         </div>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-[#1B2B5E] mb-1.5">
+            <label className="block text-xs font-bold uppercase tracking-wider text-[#1C1400] mb-1.5">
               Seu Nome Completo *
             </label>
             <input 
@@ -72,13 +72,13 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
               placeholder="Ex: Maria da Silva"
               value={formData.nome}
               onChange={(e) => setFormData({...formData, nome: e.target.value})}
-              className="w-full px-4 py-3 rounded-xl border border-blue-100 bg-white text-[#1B2B5E] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-white text-[#1C1400] focus:outline-none focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 text-sm"
             />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-[#1B2B5E] mb-1.5">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#1C1400] mb-1.5">
                 WhatsApp *
               </label>
               <input 
@@ -87,11 +87,11 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
                 placeholder="(81) 98683-3360"
                 value={formData.whatsapp}
                 onChange={(e) => setFormData({...formData, whatsapp: e.target.value})}
-                className="w-full px-4 py-3 rounded-xl border border-blue-100 bg-white text-[#1B2B5E] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-white text-[#1C1400] focus:outline-none focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 text-sm"
               />
             </div>
             <div>
-              <label className="block text-xs font-bold uppercase tracking-wider text-[#1B2B5E] mb-1.5">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#1C1400] mb-1.5">
                 Bairro / Cidade *
               </label>
               <input 
@@ -100,19 +100,19 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
                 placeholder="Ex: Recife, PE"
                 value={formData.bairro}
                 onChange={(e) => setFormData({...formData, bairro: e.target.value})}
-                className="w-full px-4 py-3 rounded-xl border border-blue-100 bg-white text-[#1B2B5E] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm"
+                className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-white text-[#1C1400] focus:outline-none focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 text-sm"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-[#1B2B5E] mb-1.5">
+            <label className="block text-xs font-bold uppercase tracking-wider text-[#1C1400] mb-1.5">
               O treino será para:
             </label>
             <select 
               value={formData.paraQuem}
               onChange={(e) => setFormData({...formData, paraQuem: e.target.value})}
-              className="w-full px-4 py-3 rounded-xl border border-blue-100 bg-white text-[#1B2B5E] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm"
+              className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-white text-[#1C1400] focus:outline-none focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 text-sm"
             >
               <option value="Para mim">Para mim mesmo(a)</option>
               <option value="Para meu pai / mãe">Para meu pai ou minha mãe</option>
@@ -123,7 +123,7 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
           </div>
 
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-[#1B2B5E] mb-1.5">
+            <label className="block text-xs font-bold uppercase tracking-wider text-[#1C1400] mb-1.5">
               Observações ou Histórico de Saúde (Opcional)
             </label>
             <textarea 
@@ -131,14 +131,14 @@ export default function BookingModal({ isOpen, onClose, whatsappNumber = "558198
               placeholder="Ex: Dores no joelho, prótese de quadril, hipertensão..."
               value={formData.mensagem}
               onChange={(e) => setFormData({...formData, mensagem: e.target.value})}
-              className="w-full px-4 py-3 rounded-xl border border-blue-100 bg-white text-[#1B2B5E] focus:outline-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm resize-none"
+              className="w-full px-4 py-3 rounded-xl border border-amber-200 bg-white text-[#1C1400] focus:outline-none focus:border-[#D97706] focus:ring-2 focus:ring-[#D97706]/20 text-sm resize-none"
             />
           </div>
 
           <button 
             ref={submitBtnRef}
             type="submit"
-            className="w-full flex items-center justify-center gap-2.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-blue-500/25 transition-all text-base mt-2 active:scale-95"
+            className="w-full flex items-center justify-center gap-2.5 bg-[#D97706] hover:bg-[#B45309] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-amber-500/25 transition-all text-base mt-2 active:scale-95"
           >
             <Send size={18} />
             <span>Enviar Solicitação via WhatsApp</span>
