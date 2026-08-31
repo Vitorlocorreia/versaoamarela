@@ -50,6 +50,11 @@ const heroSlides = [
     position: "object-[center_10%]"
   },
   {
+    src: "/images/hero/hero-3.webp",
+    alt: "Arielle Martins sorrindo no studio de treinamento",
+    position: "object-[center_15%]"
+  },
+  {
     src: "/images/hero/hero-4.webp",
     alt: "Arielle acolhendo e orientando aluna",
     position: "object-[center_15%]"
