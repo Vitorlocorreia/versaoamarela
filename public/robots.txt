@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ariellemartins.com.br/sitemap.xml
+Sitemap: https://www.ariellelongividade.com.br/sitemap.xml
