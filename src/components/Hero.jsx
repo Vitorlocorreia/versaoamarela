@@ -50,18 +50,8 @@ const heroSlides = [
     position: "object-[center_10%]"
   },
   {
-    src: "/images/hero/hero-1.webp",
-    alt: "Arielle Martins Personal Trainer de Longevidade",
-    position: "object-[center_15%]"
-  },
-  {
     src: "/images/hero/hero-4.webp",
     alt: "Arielle acolhendo e orientando aluna",
-    position: "object-[center_15%]"
-  },
-  {
-    src: "/images/hero/hero-2.webp",
-    alt: "Arielle Martins sorrindo",
     position: "object-[center_15%]"
   }
 ];
